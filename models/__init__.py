@@ -1,1 +1,1 @@
-from . import res_partner, crm
+from . import crm, res_partner
