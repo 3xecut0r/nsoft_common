@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="crm_lead_view_form_inherit" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@string='Tracking']" position="after">
+                <group string="New" name="New">
+                    <field name="x_annual_revenue"/>
+                    <field name="x_currency_id" invisible="1" />
+                    <field name="x_exchange_rate"/>
+                    <field name="x_forme"/>
+                    <field name="x_poids"/>
+                    <field name="x_purete"/>
+                    <field name="x_couleur"/>
+                    <field name="x_type_de_prospect"/>
+                    <field name="x_laboratoire"/>
+                    <field name="x_ville_principale"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

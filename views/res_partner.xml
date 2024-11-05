@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_partner_form_inherited" model="ir.ui.view">
+        <field name="name">view.partner.form.inherited</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="x_jewelry_name"/>
+                <field name="x_date_of_birth" widget="date" />
+                <field name="x_personne_name"/>
+                <field name="x_assistant"/>
+                <field name="x_mailing_city"/>
+                <field name="x_email_secondary"/>
+                <field name="x_territories"/>
+                <field name="x_code_app"/>
+                <field name="x_email_social_login_app"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
